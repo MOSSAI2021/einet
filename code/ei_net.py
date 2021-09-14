@@ -202,7 +202,9 @@ def effective_information(G):
         Win_entropy = entropy(Win, base=2)
 
         # EI = WIN_entropy - WOUT_average
-        return Win_entropy - Wout_average
+        #return Win_entropy - Wout_average
+        return Win_entropy
+
 
     # if there are no nodes with outgoing edges, the EI = 0.0
     else:
